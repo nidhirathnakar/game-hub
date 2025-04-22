@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d299c2, #fef9d7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3b82f6;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  input {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  input:focus {
+    border-color: #3b82f6;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background:#3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #3b82f6;
+  }
+  
+  /* Play Again Button Hidden by Default */
+  .hidden {
+    display: none;
+  }

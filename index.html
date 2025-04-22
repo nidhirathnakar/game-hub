@@ -1,0 +1,118 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Inspired Game Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Game Hub</h1>
+    <p>One platform for Simple brainstorming games, clean design – inspired by Chrome.  </p>
+  </header>
+  <header class="navbar">
+    <div class="logo">🎮 Nidhi's GameZone</div>
+    
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  </header>
+
+  <main class="game-grid">
+    <!-- Game Card 1 -->
+    <div class="game-card" data-aos="fade-up">
+      <img src="assets/rps.webp" alt="Game 1">
+      <h2>Rock Paper Scissors</h2>
+      <p>Play the classic game against the computer!</p>
+      <button onclick="location.href='rock-paper-scissor.html'">Play Now</button>
+    </div>
+    <div class="game-card-2" data-aos="fade-up">
+        <img src="assets/tictactoe.jpg" alt="Game 2">
+        <h2>TIC TAC TOE</h2>
+        <p>Play the classic game against the computer!</p>
+        <button onclick="location.href='tic-tac-toe.html'">Play Now</button>
+    </div>
+    <div class="game-card-3" data-aos="fade-up">
+      <img src="assets/guess-the-numb.png" alt="Game 3">
+      <h2>GUESS THE NUMBER</h2>
+      <p>Checking human and computer brain compatibility!</p>
+      <button onclick="location.href='guess-the-numb.html'">Play Now</button>
+  </div>
+    
+
+
+    <!-- Add more game cards here -->
+  </main>
+  <section class="about" id="about">
+    <h2>About This Website</h2>
+    <p>
+      Welcome to Nidhi's GameZone! 🎮<br>
+      This is a collection of fun and interactive mini games made with love using HTML, CSS & JavaScript.
+      Explore and enjoy simple, beautiful games right from your browser!
+    </p>
+  </section>
+  <section class="contact" id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>I'd love to connect! Reach out via:</p>
+  
+    <div class="contact-links">
+      <a href="nidhirathnakar@gmail.com" target="_blank">
+        📧 Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/nidhi-rathnakar-317b5723a?" target="_blank">
+        🔗 LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Game Hub | Designed by Nidhi</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+<script>
+  // Apply tilt effect to all elements with class "game-card"
+  VanillaTilt.init(document.querySelectorAll(".game-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.5
+  });
+</script>
+<script>
+    // Apply tilt effect to all elements with class "game-card"
+    VanillaTilt.init(document.querySelectorAll(".game-card-2"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5
+    });
+  </script>
+  <script>
+    // Apply tilt effect to all elements with class "game-card"
+    VanillaTilt.init(document.querySelectorAll(".game-card-3"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5
+    });
+  </script>
+</body>
+</html>
